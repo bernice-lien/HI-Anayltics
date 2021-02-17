@@ -65,6 +65,68 @@
 @import url(./../vendor/aos/css/aos.min.css);
 @import url(./../vendor/perfect-scrollbar/css/perfect-scrollbar.css);
 @import url(./../vendor/metismenu/css/metisMenu.min.css);
+/* Popup container */
+.popup {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 400;
+  color: #8743DF;
+  text-decoration: none; }
+  .popup:hover {
+    text-align: center;
+    color: #611fb6;
+    text-decoration: underline; }
+}
+
+/* Popup container */
+.popupp {
+  text-align: right;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 400;
+  color: #8743DF;
+  text-decoration: none; }
+  .popupp:hover {
+    color: #611fb6;
+    text-decoration: underline; }
+}
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 .gradient_one {
   background-image: linear-gradient(to right, rgba(186, 1, 181, 0.85) 0%, rgba(103, 25, 255, 0.85) 100%); }
 
@@ -701,6 +763,12 @@ pre {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%; }
+.applications {
+  max-width:25%;
+  max-height:25%;
+  margin-right: 1rem !important;
+}
+}
 
 .row-cols-1 > * {
   flex: 0 0 100%;
@@ -6736,6 +6804,10 @@ button.bg-dark:focus {
 .mx-auto {
   margin-right: auto !important; }
 
+  
+.mx-auto2 {
+  margin-right: 40px !important; }
+
 .mb-auto,
 .my-auto {
   margin-bottom: auto !important; }
@@ -10625,6 +10697,14 @@ svg.pulse-svg {
   .rtl .mx-3 {
     margin-right: 0 !important;
     margin-left: 1rem !important; }
+  .applications {
+    margin-right: 0 !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    max-width:25%;
+    max-height:25%;
+
+    }
   .rtl .ml-3,
   .rtl .mx-3 {
     margin-left: 0 !important;
@@ -28381,8 +28461,10 @@ table.dataTable thead .sorting {
   border-radius: 1.25rem !important; }
 
 .btn-link {
+  padding-left: 100px;
   font-weight: 500;
-  font-size: 16px; }
+  font-size: 16px
+}
   @media only screen and (max-width: 1400px) {
     .btn-link {
       font-size: 14px; } }
