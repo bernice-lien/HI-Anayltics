@@ -77,9 +77,9 @@
   text-decoration: none; }
   .popup:hover {
     text-align: center;
-    color: #611fb6;
-    text-decoration: underline; }
-}
+    color: #260e45;
+ }
+
 
 /* Popup container */
 .popupp {
@@ -88,12 +88,12 @@
   display: inline-block;
   cursor: pointer;
   font-weight: 400;
-  color: #8743DF;
+  color: #897a9d;
   text-decoration: none; }
   .popupp:hover {
     color: #611fb6;
-    text-decoration: underline; }
-}
+ }
+
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
@@ -768,7 +768,7 @@ pre {
   max-height:25%;
   margin-right: 1rem !important;
 }
-}
+
 
 .row-cols-1 > * {
   flex: 0 0 100%;
